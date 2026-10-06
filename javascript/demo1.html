@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .counter {
+            width: 300px;
+            height: 370px;
+            background: linear-gradient(145deg, #76c8ee, #38a9dc);
+            border-radius: 80px 80px 70px 70px;
+            padding: 35px 25px;
+            box-shadow:
+                10px 15px 25px rgba(0, 0, 0, 0.20),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.35);
+            position: relative;
+        }
+
+        .display {
+            width: 245px;
+            height: 105px;
+            background: #111;
+            border-radius: 18px;
+            border: 5px solid #333;
+            box-shadow:
+                inset 0 0 8px #000,
+                0 3px 5px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        #count {
+            width: 210px;
+            height: 55px;
+            background: #d8d8d8;
+            color: #111;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-size: 48px;
+            font-weight: bold;
+            text-align: right;
+            padding: 0 10px;
+            line-height: 55px;
+            box-shadow: inset 0 0 5px #555;
+        }
+
+        .buttons {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+
+        #inc {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 5px solid #1476a8;
+            background: radial-gradient(circle at 35% 30%, #ffffff, #dddddd);
+            box-shadow:
+                0 6px 8px rgba(0, 0, 0, 0.35),
+                inset 3px 3px 5px rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        
+        #res {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 4px solid #1476a8;
+            background: radial-gradient(circle at 35% 30%, #ffffff, #dddddd);
+            box-shadow:
+                0 5px 7px rgba(0, 0, 0, 0.35),
+                inset 2px 2px 4px rgba(255,255,255,0.8);
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        #inc:active,
+        #res:active {
+            transform: scale(0.94);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Labels */
+        .count-label {
+            position: absolute;
+            bottom: 20px;
+            left: 70px;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .reset-label {
+            position: absolute;
+            bottom: 20px;
+            right: 55px;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        </style> -->
+</head>
+
+<br>
+    <!-- <h2>Student Information</h2>
+    <p id="result1"></p>
+
+    <p id="result2"></p>
+
+    <h1>MCA Student Marks Calculator </h1>
+        <label for="sname">Student Name: </label>
+        <input type="text" id="sname" class="sname"></br></br>
+        <label for="sname">HTML Marks: </label>
+        <input type="text" id="html" class="html"></br></br>
+        <label for="sname">CSS Marks: </label>
+        <input type="text" id="css" class="css"></br></br>
+        <label for="sname">JS Marks: </label>
+        <input type="text" id="js" class="js"></br></br>
+        <button onclick = "calculate()">Calculate</button>
+
+    <p id="result"></p>
+
+    <h2>Using of Operators</h2> -->
+     <!-- <div class="counter">
+
+        <div class="display">
+            <div class="title">Radha Naam Jaap</div>
+            <h1 id="count">0</h1>
+        </div>
+
+        <div class="buttons">
+            <button onclick="increase()" id="inc"></button>
+            <button onclick="reset()" id="res"></button>
+        </div>
+
+        <span class="count-label">COUNT</span>
+        <span class="reset-label">RESET</span>
+
+    </div> -->
+    <!-- <h1>Show or Hide Password</h1>
+    <input type="password" name="password" id="password" placeholder="Password"></br></br>
+    <button onclick="togglePassword()">Show/Hide</button> -->
+
+    <h1>JavaScript</h1>
+    <!-- <p id="details1"></p> -->
+    <p id="details2"></p>
+    <button onclick = "upper()">Upper</button>
+    <button onclick = "lower()">lower</button>
+
+
+
+
+
+    
+
+
+
+    <script>
+        // let a = 20;
+        // let b = 10;
+        // console.log("Addition : ", a + b, "<br>");
+        // console.log("Subtraction : ", a - b, "<br>");
+        // console.log("Multiplication : ", a * b, "<br>");
+        // console.log("Division : ", a / b, "<br>");
+        // console.log("Remainder : ", a % b, "<br>");
+        // console.log("Greater than : ", a > b, "<br>");
+        // console.log("Equals to : ", a == b, "<br>");
+        // console.log("Strict equals : ", a === b, "<br>");
+
+        // document.write("Subtraction : ", a - b, "<br>");
+        // document.write("Addition : ", a + b, "<br>");
+        // document.write("Multiplication : ", a * b, "<br>");
+        // document.write("Division : ", a / b, "<br>");
+        // document.write("Remainder : ", a % b, "<br>");
+        // document.write("Greater than : ", a > b, "<br>");
+        // document.write("Equals to : ", a == b, "<br>");
+        // document.write("Strict equals : ", a === b, "<br>");
+
+        // let name = prompt("Enter your name :");
+        // let age = Number(prompt("Enter your age :"));
+
+        // alert("Welcome " + name);
+        // console.log("Name :", name);
+        // console.log("Age :", age);
+
+        // document.getElementById("result1").innerHTML = "Student name : " + name + "<br>Age : " + age;
+
+        // let num1 = Number(prompt("Enter Number 1 here :"));
+        // let num2 = Number(prompt("Enter Number 2 here :"));
+        // let addition = num1 + num2;
+        // let subtraction = num1 - num2;
+        // let multiplication = num1 * num2;
+        // console.log("Addition :", addition);
+        // console.log("Subtraction :", subtraction);
+        // console.log("Multiplication :", multiplication);
+        // document.getElementById("result2").innerHTML = "Addition :" + addition + "<br>Subtraction :" + subtraction + "<br>Multiplication :" + multiplication;
+
+        // function calculate(){
+        //     let name = document.getElementById("sname").value;
+        //     let html = Number(document.getElementById("html").value);
+        //     let css = Number(document.getElementById("css").value);
+        //     let js = Number(document.getElementById("js").value);
+
+        //     let total = html+css+js;
+        //     let percentage = total/300*100;
+
+        //     document.getElementById("result").innerHTML = "Name :" + name +"<br>Total :" + total + "<br>Percentage :" + percentage;
+        // }
+
+        // let age = Number(prompt("Enter your age"));
+        // let res = age>=18?"adult":"Not Adult";
+        // console.log(res);
+        // console.write(res);
+
+        // let i="67";
+        // console.write(typeof(i));
+        // let count = 0;
+        // let count=0;
+        // function increase(){
+        //     count++;
+        //     document.getElementById("count").innerHTML = count;
+        // }
+
+        // function reset(){
+        //     count=0;
+        //     document.getElementById("count").innerHTML = count;
+        // }  
+        
+        // function togglePassword(){
+        //     let password  = document.getElementById("password");
+        //     if(password.type === "password"){
+        //         password.type="text";
+        //     }
+        //     else{
+        //         password.type = "password";
+        //     }
+        // }
+
+        // let name = prompt("Name :");
+        // let college = prompt("College :");
+
+        // document.getElementById("details1").innerHTML = "Name : " + name + "<br>College : " + college + "<br>Name Length : " + name.length;
+        let name = prompt("Enter name : ");
+        document.getElementById("details2").innerHTML = "Name : " + name ;
+        function upper(){
+            document.getElementById("details2").innerHTML = "Name : " + name  + "<br>Uppercase : " + name.toUpperCase();
+        }
+        function lower(){
+            document.getElementById("details2").innerHTML = "Name : " + name + "<br>Lowercase : " + name.toLowerCase();
+        }
+    </script>
+
+</body>
+
+</html>

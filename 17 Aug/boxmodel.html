@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            border: 7px solid blue;
+            padding: 10px;
+            margin: 10px;
+            background-color: aqua;
+            text-align: center;
+        }
+        .usemargin{
+            border: 2px solid black;
+            margin-top: 100px;
+            margin-right: 150px;
+            margin-bottom: 100px;
+            margin-left: 80px;
+            background-color: lightblue;
+        }
+        h1{
+            color: red;
+            font-size: 30px;
+            background-color: black;
+            width: 25%;
+        }
+        .para{
+            color:orange;
+            font-size: large;
+            background-color: lightgreen;
+        }
+        #special{
+            color:green;
+            font-size: large;
+            background-color: peachpuff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <p>Box</p>
+    </div>
+    <h2>Using Individual Margin Properties</h2>
+    <div class="usemargin">
+        This div Element has top margin of 100px, a right margin of 150px,a bottom margin of 100px, and a let margin of 80px.
+    </div>
+    <h1>Element Selector</h1>
+    <div class="para">This para use class selector</div>
+    <p id="special">This paragraph uses an ID selector</p>
+    <h2></h2>
+</body>
+</html>

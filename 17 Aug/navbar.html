@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar, Image Gallery, Rounded Corner</title>
+    <style>
+        .navbar{
+            background-color: Black;
+            padding: 15px;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;         
+        }
+        .navbar a:hover{
+            /* background-color: white; */
+            color: yellow;
+        }
+        .gallery{
+            display: flex;
+            gap: 10px;
+
+        }
+        .gallery img{
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .gallery img:hover{
+            transform: scale(1.1);
+        }
+        .banner{
+            width:600px;
+            padding:50px;
+            text-align:center;
+            color:white;
+            background:linear-gradient(to right, #ff0000, #ff9900); 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="https://picsum.photos/200/300?random=1" alt="" class="scr">
+        <img src="https://picsum.photos/200/300?random=2" alt="" class="scr">
+        <img src="https://picsum.photos/200/300?random=3" alt="" class="scr">
+        <img src="https://picsum.photos/200/300?random=4" alt="" class="scr">
+        <img src="https://picsum.photos/200/300?random=5" alt="" class="scr">
+    </div>
+    <div class="banner">
+        <h1>Welcome to MCA</h1>
+        <p>LEARN. CODE. INNOVATE.</p>
+    </div>
+</body>
+</html>

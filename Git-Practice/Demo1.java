@@ -3,7 +3,7 @@
 // int arr[] = {1,1,2,2,1,1,2,2};
 // int brr[] = new int[arr.length]; 
 // int count =0;
-// for (int i =0; i < arr.length-1; i++) {
+// for (int i =0; i < arr.length; i++) {
 //     int n;
 //     for(int j=i+1;j<arr.length;j++){
 //         if ( arr[i] == arr[j]) {
@@ -18,7 +18,6 @@
 //         }
 //     }
 // }
-
 // for(int i=0;i<brr.length;i++){
 //     System.out.println(brr[i]);
 // }
@@ -32,8 +31,9 @@ class Demo1 {
 
         System.out.print("Enter array size: ");
         int size = sc.nextInt();
+        int n = sc 5252525252
         int arr[] = new int[size];
-        int brr[] = new int[size];
+        // int brr[] = new int[size];
         System.out.println("Enter array elements:");
 
         for (int i = 0; i < arr.length; i++) {
@@ -41,14 +41,11 @@ class Demo1 {
         }
 
         int count = 0;
-        int arr[] = {1,1,2,2,1,1,2,2};
+        int arr[n];
 
         for (int i = 0; i < arr.length; i++) {
-
             boolean found = false;
-
             for (int j = 0; j < count; j++) {
-
                 if (arr[i] == brr[j]) {
                     found = true;
                     break;

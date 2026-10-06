@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>My first JavaScript</h2>
+    <button type="button"  onclick="document.getElementById('demo').innerHTML=Date()">Display Date and Time</button>
+    <p id="demo"></p> 
+
+    <h2>What javaScript Do?</h2>
+    <p id="demo1">Java can change HTML content</p>
+    <button type="button" 
+    onclick="
+    document.getElementById('demo1').innerHTML='Hello JabhaScript';
+    document.getElementById('demo1').style.fontSize='35px';
+    document.getElementById('demo1').style.color= 'red';
+    ">
+    Yess!!
+    </button>
+    <button type="button" 
+    onclick="
+    document.getElementById('demo1').style.display = 'none';
+    ">No!!  
+    </button>
+
+    <img id="bulb" src="bulb off.png" width="100">
+
+    <button onclick="document.getElementById('bulb').src='bulb on.png'">
+    ON
+    </button>
+
+    <button onclick="document.getElementById('bulb').src='bulb off.png'">
+    OFF
+    </button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+    <script>
+        let name = "Aditya";
+        let marks = 94;
+        const college = "KIET";
+        document.write("Name :", name);
+        document.write("Marks :",marks);
+        document.write("College :", college);
+    </script>
+    abcdefghijklmnopqrstuvwxyz
+</body>
+</html>
